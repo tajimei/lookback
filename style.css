@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.day:hover {
+  background-color: #f0f0f0;
+}
+
+.event {
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  background: #d9fdd3;
+  padding: 2px;
+  border-radius: 4px;
+}
