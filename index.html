@@ -6,8 +6,18 @@
   <title>カレンダーアプリ</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<h2>今月の予定一覧</h2>
+<ul id="event-list"></ul>
 <body>
   <h1>カレンダー</h1>
+
+  <!-- 月切り替えUI -->
+  <div id="header">
+    <button id="prev">◀︎ 前の月</button>
+    <span id="month-year">YYYY年M月</span>
+    <button id="next">次の月 ▶︎</button>
+  </div>
+
   <div id="calendar"></div>
 
   <script src="script.js"></script>
